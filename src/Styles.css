@@ -7,6 +7,17 @@
     height: 100vh;
 }
 
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    position: absolute;
+    top: 0;
+}
+
 .title {
     /* font-family: "Comic Sans", cursive; */
 }

@@ -26,18 +26,27 @@ function Job({
 
 export default function JobsPage() {
     let jobs = {
-        "Example Job 1": "This is an example job description",
-        "Example Job 2": "This is another example job description",
-        "Example Job 3": "This is a third example job description",
+        "Unity": "Do Unity stuff",
+        "Marketing": "Do marketing stuff",
+        "Wizard": "Do magic",
+        "Janitor": "Clean stuff",
     }
     return (
         <div style={backgroundStyle}>
             <div className="page-container">
+                <div className="header">
+                    <h1 className="title"> We're looking for </h1>
+                </div>
                 {Object.keys(jobs).map((job) => {
                     return (
                         <Job name={job} description={jobs[job]} />
                     )
                 })}
+                <div className="footer">
+                    <div className="item">
+                        <Link sx={{ color: '#fff' }} component={RouterLink} to="/">Back</Link>
+                    </div>
+                </div>
             </div>
         </div>
     )

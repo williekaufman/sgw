@@ -16,7 +16,7 @@ export default function LandingPage() {
     return (
         <div style={backgroundStyle}>
             <div className="page-container">
-                <div>
+                <div className="header">
                     <h1 className="title">Starlight Games</h1>
                 </div>
                 <div>
