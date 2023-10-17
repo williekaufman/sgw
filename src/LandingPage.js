@@ -20,7 +20,7 @@ export default function LandingPage() {
                     <h1 className="title">Starlight Games</h1>
                 </div>
                 <div>
-                    <p>We're making a mobile-focused auto battler or something</p>
+                    <h3> Currently working on a mobile-focused strategy game. More information to come soon! </h3>
                 </div>
                 <div className="footer">
                     <div className="item">

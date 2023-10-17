@@ -10,16 +10,16 @@
 .header {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
     position: absolute;
-    top: 3vh;
+    top: 6vh;
 }
 
 .title {
-    /* font-family: "Comic Sans", cursive; */
+    font-family: playfair-display, serif;
 }
 
 h1 {
@@ -30,7 +30,7 @@ h1 {
 .footer {
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     height: 10vh;

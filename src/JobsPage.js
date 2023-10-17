@@ -40,21 +40,17 @@ export default function JobsPage() {
             document.removeEventListener('keydown', handleKeyDown);
         };
     }, []);
-
+// 
 
     let jobs = {
-        "Unity": "Do Unity stuff",
-        "Marketing": "Do marketing stuff",
-        "Wizard": "Do magic",
-        "Janitor": "Clean stuff",
     }
     return (
         <div style={backgroundStyle}>
             <div className="page-container">
                 <div className="header">
-                    <h1 className="title"> We're looking for </h1>
+                    <h1 className="title"> Jobs </h1>
                 </div>
-                <h2> Interested? Send us an email at <a style={{ color: 'white' }} href="mailto:jobs@starlight-games.com"> jobs@starlight-games.com </a> </h2>
+                <h2> Interested in working with us? Send us an email at <a style={{ color: 'white' }} href="mailto:jobs@starlight-games.com"> jobs@starlight-games.com </a> </h2>
                 {Object.keys(jobs).map((job) => {
                     return (
                         <Job name={job} description={jobs[job]} />
