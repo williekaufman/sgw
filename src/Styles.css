@@ -15,7 +15,7 @@
     align-items: center;
     height: 10vh;
     position: absolute;
-    top: 0;
+    top: 3vh;
 }
 
 .title {
@@ -35,7 +35,7 @@ h1 {
     align-items: center;
     height: 10vh;
     position: absolute;
-    bottom: 0;
+    bottom: 3vh;
 }
 
 .footer .item {
