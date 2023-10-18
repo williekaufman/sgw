@@ -3,6 +3,7 @@ import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom';
 import './Styles.css';
 import backgroundImage from './images/background.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const backgroundStyle = {
     backgroundImage: `url(${backgroundImage})`,
@@ -25,6 +26,22 @@ function Job({
 }
 
 export default function JobsPage() {
+    let navigate = useNavigate();
+
+    useEffect(() => {
+        const handleKeyDown = (event) => {
+            if (event.key === 'Backspace') {
+                navigate('/');
+            };
+        };
+
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
+
+
     let jobs = {
         "Unity": "Do Unity stuff",
         "Marketing": "Do marketing stuff",
@@ -37,6 +54,7 @@ export default function JobsPage() {
                 <div className="header">
                     <h1 className="title"> We're looking for </h1>
                 </div>
+                <h2> Interested? Send us an email at <a style={{ color: 'white' }} href="mailto:jobs@starlight-games.com"> jobs@starlight-games.com </a> </h2>
                 {Object.keys(jobs).map((job) => {
                     return (
                         <Job name={job} description={jobs[job]} />
