@@ -19,7 +19,9 @@
 }
 
 .title {
-    font-family: playfair-display, serif;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 h1 {
@@ -45,6 +47,11 @@ h1 {
     justify-content: center;
     align-items: center;
     color: white;
+    transition: 0.3s;
+}
+
+.footer .item:hover {
+    transform: scale(1.1);
 }
 
 .info-text {
