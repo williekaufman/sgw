@@ -19,16 +19,16 @@ export default function LandingPage() {
                 <div className="header">
                     <h1 className="title">Starlight Games</h1>
                 </div>
-                <div>
-                    <h3> Currently working on a mobile-focused strategy game. More information to come soon! </h3>
+                <div className="info-text">
+                    <h2> Currently working on a mobile-focused strategy game. More information to come soon! </h2>
                 </div>
                 <div className="footer">
                     <div className="item">
                         <Link sx={{ color: '#fff' }} component={RouterLink} to="/contact">Contact Us</Link>
                     </div>
-                    <div className="item">
-                        <Link sx={{ color: '#fff' }} component={RouterLink} to="/jobs">Jobs</Link>
-                    </div>
+                    {/* <div className="item"> */}
+                        {/* <Link sx={{ color: '#fff' }} component={RouterLink} to="/jobs">Jobs</Link> */}
+                    {/* </div> */}
                 </div>
             </div>
         </div>
